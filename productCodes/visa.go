@@ -1,8 +1,8 @@
 package productCodes
 
 // GetVisaProductName GetVisaProductCode returns the product name for the given product code
-func GetVisaProductName(productCode string) string {
-	var v, ex = visaProductCodes[productCode]
+func GetVisaProductName(productCode *string) string {
+	var v, ex = visaProductCodes[*productCode]
 	if ex {
 		return v
 	}

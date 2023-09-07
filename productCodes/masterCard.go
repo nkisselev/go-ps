@@ -1,8 +1,8 @@
 package productCodes
 
 // GetMasterCardProductName Returns the product name for the given product code.
-func GetMasterCardProductName(productCode string) string {
-	var v, ex = masterCardProductTypes[productCode]
+func GetMasterCardProductName(productCode *string) string {
+	var v, ex = masterCardProductTypes[*productCode]
 	if ex {
 		return v
 	}
